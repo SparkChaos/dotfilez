@@ -79,8 +79,9 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+ if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+ fi
 # else
 #   export EDITOR='mvim'
 # fi
@@ -111,7 +112,10 @@ export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH/bin:/opt/puppetlabs/pdk/bin
 export PATH="$HOME/Library/Haskell/bin:$PATH"
-export GO111MODULE=on
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
+export PATH=$PATH:/Applications/VMware\ OVF\ Tool
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="$HOME/.jenv/bin:$PATH"
 
 #=========================================== Aliases ============================================
 ## Vim
@@ -129,10 +133,7 @@ alias dotfilez='/usr/local/bin/git --git-dir=$HOME/.dotfilez/ --work-tree=$HOME'
 
 
 #=========================================== Integrations ============================================
+export GO111MODULE=on
 source ~/.iterm2_shell_integration.zsh
-export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
-export GROOVY_HOME=/usr/local/opt/groovy/libexec
-export PATH=$PATH:/Applications/VMware\ OVF\ Tool
-export PATH="/usr/local/opt/openssl/bin:$PATH"
