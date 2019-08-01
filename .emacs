@@ -29,7 +29,7 @@
     ("d1ede12c09296a84d007ef121cd72061c2c6722fcb02cb50a77d9eae4138a3ff" "1d2f406a342499f0098f9388b87d05ec9b28ccb12ca548f4f5fa80ae368235b6" default)))
  '(package-selected-packages
    (quote
-    (evil-visual-mark-mode evil monokai-alt-theme monokai-theme monokai-pro-theme))))
+    (go-complete go-gen-test go flycheck-golangci-lint evil-visual-mark-mode evil monokai-alt-theme monokai-theme monokai-pro-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
